@@ -1,1 +1,14 @@
+<<<<<<< HEAD
 /* cloned stylesheet */
+=======
+/* original stylesheet */
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+>>>>>>> 2c6a84123edfb57ef8288cbfea74f2af1e22f3ee
