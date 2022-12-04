@@ -105,13 +105,20 @@
         </section>
         <section id="section-8">
             <p class="sub-heading">7. branch command</p>
-            <p class="paragraph"> The git status command displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git. This is a great command to run before committing any changes and after pulling in changes from another repository. </p> 
-            <div class="img-container">
-                <img src="images/status.png" alt="git-status" class="imgg">
-                <p class="pg-images">status command</p>
-            </div>
+            <p class="paragraph">
+                The git branch command is used to list, create, or delete branches. A branch is an independent line of development. It is contained within the repository, but does not affect the primary or master branch allowing you to work freely without disrupting the "live" version. When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch to encapsulate your changes. This makes sure that unstable code is never committed to the main code base, and it gives you the chance to clean up your future's history before merging it into the main branch. </p>
+                <p class="paragraph">
+                    Here, to demonstrate the branch command, we'll create a new branch <em>master</em> and switch to it, and then futher on we'll merge it with the <em>main</em> branch.
+                </p>
+                <div class="img-container">
+                    <img src="images/create branch.png" alt="git-branch" class="imgg">
+                    <p class="pg-images">creating a new branch - master</p>
+                </div>
+                <div class="img-container">
+                    <img src="images/merge branch.png" alt="merge-git-branch" class="imgg">
+                    <p class="pg-images">merging master branch with main branch</p>
+                </div>
         </section>
-
     </div>
 </body>
 
