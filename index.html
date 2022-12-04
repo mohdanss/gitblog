@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Git Assignment</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="head">
+            <p class="heading">Mobile Computing Assignment 01</p>
+            <p class="sub-heading">Git Blog</p>
+        </div>
+        <section id="section-1">
+            <p class="sub-heading">What is Git?</p>
+            <p class="paragraph">Git is a distributed version control system: tracking changes in any set of files,
+                usually used for coordinating work among programmers collaboratively developing source code during
+                software development. Its goals include speed, data integrity, and support for distributed, non-linear
+                workflows</p>
+        </section>
+        <section id="section-2">
+            <p class="sub-heading">Git commands demo</p>
+            <p class="paragraph">Here we'll create a simple git repository and manage it via git (windows), using
+                different commands and also look how to manage different issues regarding git, like merging, branching,
+                etc.</p>
+        </section>
+        <section id="section-3">
+            <p class="sub-heading">1. init command</p>
+            <p class="paragraph"> The git init command is used to create an empty Git repository or reinitialize an
+                existing one. It is used to start a new repository from scratch, or to reinitialize an existing one. It
+                creates a new subdirectory named .git that contains all of your necessary repository files — a Git
+                repository skeleton. This subdirectory is what is copied when you clone a repository from another
+                computer.</p>
+                <div class="img-container">
+                    <img src="images/status_without_init.png" alt="git-init" class="imgg">
+                    <p class="pg-images">checking status without init</p>
+                </div>
+                <div class="img-container">
+                    <img src="images/status_after_init.png" alt="git-init" class="imgg">
+                    <p class="pg-images">checking status after init</p>
+                </div>
+        </section>
+        <section id="section-4">
+            <p class="sub-heading">2. add command</p>
+            <p class="paragraph"> The git add command adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit. It adds the file to the staging area, but it doesn’t actually commit it to the repository yet. You can think of the staging area as a prep table where Git will take the next commit.</p>
+                <div class="img-container">
+                    <img src="images/after add.png" alt="git-add" class="imgg">
+                    <p class="pg-images">add command</p>
+                </div>
+        </section>
+        <section id="section-5">
+            <p class="sub-heading">3. commit command</p>
+            <p class="paragraph"> The git commit command is used to save your changes to the local repository. It takes a snapshot of the project's currently staged changes. This command saves the changes to the local repository with a message that describes the changes.
+                <div class="img-container">
+                    <img src="images/after commit.png" alt="git-commit" class="imgg">
+                    <p class="pg-images">commit command</p>
+                </div>
+        </section>
+        <section id="section-6">
+            <p class="sub-heading">4. push command</p>
+            <p class="paragraph"> The git push command is used to upload local repository content to a remote repository. Pushing is how you transfer commits from your local repository to a remote repo. It's the counterpart to git fetch, but whereas fetching imports commits to local branches, pushing exports commits to remote branches. </p>  
+            <div class="img-container">
+                <img src="images/first push.png" alt="git-push" class="imgg">
+                <p class="pg-images">push command</p>
+            </div>
+            <div class="img-container">
+                <img src="images/first push github.png" alt="git-push-github" class="imgg">
+                <p class="pg-images">effect on github</p>
+            </div>
+        </section>
+        <section id="section-6">
+            <p class="sub-heading">5. clone command</p>
+            <p class="paragraph"> The git clone command is used to create a local copy of a remote repository. Cloning a repository creates a new directory, initializes it with a .git directory, pulls down all the data for that repository, and checks out a working copy of the latest version. If you want to clone a repository into a directory named something other than <em>repo</em>, you can specify the new directory name as an additional argument. </p> 
+            <p class="paragraph">
+                Here, we'll clone our repository to a new directory.
+            </p>
+            <div class="img-container">
+                <img src="images/clone.png" alt="git-clone" class="imgg">
+                <p class="pg-images">clone command</p>
+            </div>
+            <div class="img-container">
+                <img src="images/after clone folders.png" alt="git-clone-dir" class="imgg">
+                <p class="pg-images">a new directory is created</p>
+            </div>
+        </section>
+        <section id="section-7">
+            <p class="sub-heading">6. pull command</p>
+            <p class="paragraph"> The git pull command is used to fetch and download content from a remote repository and immediately update the local repository to match that content. Pulling is how you transfer commits from a remote repository to your local repo. It's the counterpart to git push, but whereas pushing exports commits to remote branches, pulling imports commits to local branches. </p> 
+            <p class="paragraph">
+                Here, If changes were made by someone else on the remote repository, we can pull those changes to our local repository. If changes were made and we try to push them, we'll get an error, 'failed to push some refs to remote'. So, we'll pull the changes first and then push them.
+            </p>
+            <div class="img-container">
+                <img src="images/push failed need pull.png" alt="git-pull" class="imgg">
+                <p class="pg-images">push failed</p>
+            </div>
+            <div class="img-container">
+                <img src="images/pull.png" alt="git-pull" class="imgg">
+                <p class="pg-images">pulling changes</p>
+            </div>
+        </section>
+        <section id="section-8">
+            <p class="sub-heading">7. branch command</p>
+            <p class="paragraph"> The git status command displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git. This is a great command to run before committing any changes and after pulling in changes from another repository. </p> 
+            <div class="img-container">
+                <img src="images/status.png" alt="git-status" class="imgg">
+                <p class="pg-images">status command</p>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>
