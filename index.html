@@ -36,34 +36,42 @@
                 creates a new subdirectory named .git that contains all of your necessary repository files — a Git
                 repository skeleton. This subdirectory is what is copied when you clone a repository from another
                 computer.</p>
-                <div class="img-container">
-                    <img src="images/status_without_init.png" alt="git-init" class="imgg">
-                    <p class="pg-images">checking status without init</p>
-                </div>
-                <div class="img-container">
-                    <img src="images/status_after_init.png" alt="git-init" class="imgg">
-                    <p class="pg-images">checking status after init</p>
-                </div>
+            <div class="img-container">
+                <img src="images/status_without_init.png" alt="git-init" class="imgg">
+                <p class="pg-images">checking status without init</p>
+            </div>
+            <div class="img-container">
+                <img src="images/status_after_init.png" alt="git-init" class="imgg">
+                <p class="pg-images">checking status after init</p>
+            </div>
         </section>
         <section id="section-4">
             <p class="sub-heading">2. add command</p>
-            <p class="paragraph"> The git add command adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit. It adds the file to the staging area, but it doesn’t actually commit it to the repository yet. You can think of the staging area as a prep table where Git will take the next commit.</p>
-                <div class="img-container">
-                    <img src="images/after add.png" alt="git-add" class="imgg">
-                    <p class="pg-images">add command</p>
-                </div>
+            <p class="paragraph"> The git add command adds a change in the working directory to the staging area. It
+                tells Git that you want to include updates to a particular file in the next commit. It adds the file to
+                the staging area, but it doesn’t actually commit it to the repository yet. You can think of the staging
+                area as a prep table where Git will take the next commit.</p>
+            <div class="img-container">
+                <img src="images/after add.png" alt="git-add" class="imgg">
+                <p class="pg-images">add command</p>
+            </div>
         </section>
         <section id="section-5">
             <p class="sub-heading">3. commit command</p>
-            <p class="paragraph"> The git commit command is used to save your changes to the local repository. It takes a snapshot of the project's currently staged changes. This command saves the changes to the local repository with a message that describes the changes.
-                <div class="img-container">
-                    <img src="images/after commit.png" alt="git-commit" class="imgg">
-                    <p class="pg-images">commit command</p>
-                </div>
+            <p class="paragraph"> The git commit command is used to save your changes to the local repository. It takes
+                a snapshot of the project's currently staged changes. This command saves the changes to the local
+                repository with a message that describes the changes.
+            <div class="img-container">
+                <img src="images/after commit.png" alt="git-commit" class="imgg">
+                <p class="pg-images">commit command</p>
+            </div>
         </section>
         <section id="section-6">
             <p class="sub-heading">4. push command</p>
-            <p class="paragraph"> The git push command is used to upload local repository content to a remote repository. Pushing is how you transfer commits from your local repository to a remote repo. It's the counterpart to git fetch, but whereas fetching imports commits to local branches, pushing exports commits to remote branches. </p>  
+            <p class="paragraph"> The git push command is used to upload local repository content to a remote
+                repository. Pushing is how you transfer commits from your local repository to a remote repo. It's the
+                counterpart to git fetch, but whereas fetching imports commits to local branches, pushing exports
+                commits to remote branches. </p>
             <div class="img-container">
                 <img src="images/first push.png" alt="git-push" class="imgg">
                 <p class="pg-images">push command</p>
@@ -75,7 +83,11 @@
         </section>
         <section id="section-6">
             <p class="sub-heading">5. clone command</p>
-            <p class="paragraph"> The git clone command is used to create a local copy of a remote repository. Cloning a repository creates a new directory, initializes it with a .git directory, pulls down all the data for that repository, and checks out a working copy of the latest version. If you want to clone a repository into a directory named something other than <em>repo</em>, you can specify the new directory name as an additional argument. </p> 
+            <p class="paragraph"> The git clone command is used to create a local copy of a remote repository. Cloning a
+                repository creates a new directory, initializes it with a .git directory, pulls down all the data for
+                that repository, and checks out a working copy of the latest version. If you want to clone a repository
+                into a directory named something other than <em>repo</em>, you can specify the new directory name as an
+                additional argument. </p>
             <p class="paragraph">
                 Here, we'll clone our repository to a new directory.
             </p>
@@ -90,9 +102,14 @@
         </section>
         <section id="section-7">
             <p class="sub-heading">6. pull command</p>
-            <p class="paragraph"> The git pull command is used to fetch and download content from a remote repository and immediately update the local repository to match that content. Pulling is how you transfer commits from a remote repository to your local repo. It's the counterpart to git push, but whereas pushing exports commits to remote branches, pulling imports commits to local branches. </p> 
+            <p class="paragraph"> The git pull command is used to fetch and download content from a remote repository
+                and immediately update the local repository to match that content. Pulling is how you transfer commits
+                from a remote repository to your local repo. It's the counterpart to git push, but whereas pushing
+                exports commits to remote branches, pulling imports commits to local branches. </p>
             <p class="paragraph">
-                Here, If changes were made by someone else on the remote repository, we can pull those changes to our local repository. If changes were made and we try to push them, we'll get an error, 'failed to push some refs to remote'. So, we'll pull the changes first and then push them.
+                Here, If changes were made by someone else on the remote repository, we can pull those changes to our
+                local repository. If changes were made and we try to push them, we'll get an error, 'failed to push some
+                refs to remote'. So, we'll pull the changes first and then push them.
             </p>
             <div class="img-container">
                 <img src="images/push failed need pull.png" alt="git-pull" class="imgg">
@@ -104,29 +121,36 @@
             </div>
         </section>
         <section id="section-8">
-            <p class="sub-heading">7. branch command</p>
+            <p class="sub-heading">7. branch & merge command</p>
             <p class="paragraph">
-                The git branch command is used to list, create, or delete branches. A branch is an independent line of development. It is contained within the repository, but does not affect the primary or master branch allowing you to work freely without disrupting the "live" version. When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch to encapsulate your changes. This makes sure that unstable code is never committed to the main code base, and it gives you the chance to clean up your future's history before merging it into the main branch. </p>
-                <p class="paragraph">
-                    Here, to demonstrate the branch command, we'll create a new branch <em>master</em> and switch to it, and then futher on we'll merge it with the <em>main</em> branch.
-                </p>
-                <div class="img-container">
-                    <img src="images/create branch.png" alt="git-branch" class="imgg">
-                    <p class="pg-images">creating a new branch - master</p>
-                </div>
-                <div class="img-container">
-                    <img src="images/pushing to master.png" alt="pushing to master" class="imgg">
-                    <p class="pg-images">pushing to master</p>
-                </div>
-                <div class="img-container">
-                    <img src="images/merge.png" alt="git-merge" class="imgg">
-                    <p class="pg-images">merging master to main</p>
-                </div>
+                The git branch command is used to list, create, or delete branches. A branch is an independent line of
+                development. It is contained within the repository, but does not affect the primary or master branch
+                allowing you to work freely without disrupting the "live" version. When you want to add a new feature or
+                fix a bug—no matter how big or how small—you spawn a new branch to encapsulate your changes. This makes
+                sure that unstable code is never committed to the main code base, and it gives you the chance to clean
+                up your future's history before merging it into the main branch. </p>
+            <p class="paragraph">
+                Here, to demonstrate the branch command, we'll create a new branch <em>master</em> and switch to it, and
+                then futher on we'll merge it with the <em>main</em> branch.
+            </p>
+            <div class="img-container">
+                <img src="images/create branch.png" alt="git-branch" class="imgg">
+                <p class="pg-images">creating a new branch - master</p>
+            </div>
+            <div class="img-container">
+                <img src="images/pushing to master.png" alt="pushing to master" class="imgg">
+                <p class="pg-images">pushing to master</p>
+            </div>
+            <div class="img-container">
+                <img src="images/merge.png" alt="git-merge" class="imgg">
+                <p class="pg-images">merging master to main</p>
+            </div>
         </section>
+        <footer>
+            <p class="footer-text">Made with ❤️ by <a href="https://github.com/mohdanss" target="_blank" rel="noopener" class="linkk">anc</a></p>
+        </footer>
     </div>
 </body>
 
 </html>
 
-<!-- merge command -->
-<!-- git merge <branch> -->
